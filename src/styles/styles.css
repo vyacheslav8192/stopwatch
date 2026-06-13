@@ -1,0 +1,41 @@
+#app {
+  height: 100%;
+}
+
+.container {
+  --container-padding-inline: 1rem;
+  --container-max-width: 75rem;
+
+  height: 100%;
+  max-width: calc(
+    var(--container-max-width) - (var(--container-padding-inline) * 2)
+  );
+  padding-inline: var(--container-padding-inline);
+  margin-inline: auto;
+}
+
+.layout {
+  height: 100%;
+
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.header {
+  padding-block: 1rem;
+}
+
+.stopwatch-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer {
+  padding-block: 1rem;
+}
+
+.triggers {
+  display: flex;
+  column-gap: 0.35rem;
+}
